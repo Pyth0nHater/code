@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Radio_Canada } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 
 const radioCanada = Radio_Canada({ subsets: ["latin"] });
 

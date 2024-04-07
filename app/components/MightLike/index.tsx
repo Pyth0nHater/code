@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styled from "./mightlike.module.css";
+import styled from "./mightlike.module.scss";
 
 const MightLike: FC = () => {
   return (

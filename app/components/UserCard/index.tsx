@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styled from "./userCard.module.css";
+import styled from "./userCard.module.scss";
 
 import Image from "next/image";
 import { Pencil } from "lucide-react";

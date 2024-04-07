@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styled from "./themes.module.css";
+import styled from "./themes.module.scss";
 
 const Themes: FC = () => {
   return (

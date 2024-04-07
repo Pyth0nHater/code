@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styled from "./navbar.module.css";
+import styled from "./navbar.module.scss";
 
 import navItems from "@/app/constants";
 import Link from "next/link";

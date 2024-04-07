@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styled from "./trends.module.css";
+import styled from "./trends.module.scss";
 
 const Trends: FC = () => {
   return (

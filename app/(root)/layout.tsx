@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import styled from "./root.module.css";
+import styled from "./root.module.scss";
 import Image from "next/image";
 
 import logo from "@/public/logo.svg";

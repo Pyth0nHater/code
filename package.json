@@ -12,8 +12,12 @@
     "lucide-react": "^0.365.0",
     "next": "14.1.4",
     "react": "^18",
+<<<<<<< HEAD
     "react-dom": "^18",
     "sass": "^1.74.1"
+=======
+    "react-dom": "^18"
+>>>>>>> 04f5f7f8d26340a5fdd3b7819d59b35e7645aab4
   },
   "devDependencies": {
     "@types/node": "^20",

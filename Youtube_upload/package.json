@@ -1,0 +1,26 @@
+{
+  "name": "antik",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@tobyg74/tiktok-api-dl": "github:tobyg74/tiktok-api-dl",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^5.2.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "ghost-cursor": "^1.2.0",
+    "node-telegram-bot-api": "^0.65.1",
+    "puppeteer": "^22.4.1",
+    "puppeteer-core": "^22.4.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "videoshow": "^0.1.12",
+    "ytdl-core": "^4.11.5"
+  }
+}

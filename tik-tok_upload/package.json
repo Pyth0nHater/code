@@ -1,0 +1,21 @@
+{
+  "name": "tik-tok",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tobyg74/tiktok-api-dl": "^1.0.14",
+    "axios": "^1.6.7",
+    "chrome-aws-lambda": "^10.1.0",
+    "ghost-cursor": "^1.2.0",
+    "node-telegram-bot-api": "^0.65.1",
+    "puppeteer": "^22.6.3",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}

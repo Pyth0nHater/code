@@ -1,0 +1,22 @@
+{
+  "name": "telegram-bot",
+  "version": "1.0.0",
+  "main": "send.js",
+  "bin": "send.js",
+  "scripts": {
+    "start": "node send.js"
+  },
+  "dependencies": {
+    "input": "^1.0.0",
+    "loglevel": "^1.8.1",
+    "prompts": "^2.4.0",
+    "telegram": "^1.0.0"
+  },
+  "pkg": {
+    "targets": [
+      "node14-win-x64",
+      "node14-linux-x64"
+    ],
+    "output": "telegram-bot.exe"
+  }
+}

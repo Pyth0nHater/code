@@ -1,0 +1,16 @@
+{
+  "name": "antik",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "check-proxy": "^0.3.5",
+    "puppeteer": "^22.5.0",
+    "puppeteer-extra": "^3.3.6"
+  }
+}

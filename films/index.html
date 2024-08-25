@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ответ с сервера</title>
+</head>
+<body>
+    <h1>Ответ с сервера</h1>
+    <video controls autoplay>
+        <!-- В этом теге <source> указывается путь к видео с сервера -->
+        <source src="" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        async function fetchData() {
+          try {
+            const headers = {
+              'Accept': '*/*',
+              'Accept-Encoding': 'gzip, deflate, br',
+              'Accept-Language': 'ru,en;q=0.9',
+              'Connection': 'keep-alive',
+              'Host': 'fazhzcezbdi.otsdkstub.ws',
+              'Origin': 'https://api.linktodo.ws',
+              'Referer': 'https://api.linktodo.ws/',
+              'Sec-Ch-Ua': '"Chromium";v="122", "Not(A:Brand";v="24", "YaBrowser";v="24.4", "Yowser";v="2.5"',
+              'Sec-Ch-Ua-Mobile': '?0',
+              'Sec-Ch-Ua-Platform': '"Windows"',
+              'Sec-Fetch-Dest': 'empty',
+              'Sec-Fetch-Mode': 'cors',
+              'Sec-Fetch-Site': 'cross-site',
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 YaBrowser/24.4.0.0 Safari/537.36'
+            };
+
+            const response = await axios.get('https://fazhzcezbdi.otsdkstub.ws/x-en-x/khq2FhqaYa8cky8aRn8ckC8xRp9Lnw5HyyZyRa85YvqGkhbckn83Rn53SmOIj3QIz2sujBEckBbxkhDG', { headers });
+            
+            const videoUrl = response.data;
+            
+            const videoElement = document.querySelector('video');
+            videoElement.src = videoUrl;
+          } catch (error) {
+            console.error('Ошибка при выполнении запроса:', error);
+          }
+        }
+
+        fetchData();
+    </script>
+</body>
+</html>

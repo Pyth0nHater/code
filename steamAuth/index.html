@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with Steam</title>
+</head>
+<body>
+    <h1>Login with Steam</h1>
+    <button onclick="loginWithSteam()">Login with Steam</button>
+
+    <script>
+        function loginWithSteam() {
+            const serverIP = '77.91.87.68:3000'; // Ваш IP-адрес
+            // Redirect to Steam OpenID login page
+            window.location.href = 'https://steamcommunity.com/openid/login' +
+                                    '?openid.ns=http://specs.openid.net/auth/2.0' +
+                                    '&openid.mode=checkid_setup' +
+                                    '&openid.return_to=http://' + serverIP + '/auth/steam/return' +
+                                    '&openid.realm=http://' + serverIP + '/';
+        }
+    </script>
+</body>
+</html>

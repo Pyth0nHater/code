@@ -1,0 +1,379 @@
+.container {
+  width: 900px;
+  height: 800px;
+  margin-top: -4px;
+  margin-left: -4px;
+  background: #2d3134;
+  border-radius: 10px;
+  display: flex;
+
+  .usersSection {
+    overflow: auto;
+    width: 2228px;
+    height: 800px;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    .inputArea {
+      width: 440px;
+      height: 50px;
+      background-color: #3b444b;
+      border-top-left-radius: 10px;
+      padding-left: -5px;
+      padding-top: -5px;
+
+      input {
+        background: transparent;
+        color: white;
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        resize: none;
+        border: none;
+        padding-left: 29px;
+        padding-top: 16px;
+        font-size: 15px;
+
+        &::placeholder {
+          color: white;
+        }
+      }
+    }
+
+    
+    .chatsSection {
+      width: 280px;
+      height: 800px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding-left: -5px;
+      padding-top: -5px;
+
+      .loading-icon {
+        align-items: center;
+        justify-content: center;
+        margin-top: 70%;
+        margin-left: 70%;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+
+      .user {
+        display: flex;
+        align-items: center;
+        background-color: #2d3134;
+        width: 440px;
+        height: 78px;
+        border-radius: 10px;
+        position: relative;
+        cursor: pointer;
+
+        .lastMessage {
+          text-align: center;
+          width: 184px;
+          margin-left: 10px;
+          font-size: 12px;
+        }
+
+        .createdAt {
+          color: #8a98a4;
+          position: absolute;
+          right: 7px;
+          bottom: 7px;
+          font-size: 13px;
+        }
+
+        .line {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #4c4c4c;
+        }
+
+        .rightLine {
+          position: absolute;
+          right: 0;
+          width: 1px;
+          height: 110%;
+          background-color: #4c4c4c;
+        }
+
+        .infos {
+          display: flex;
+          flex-direction: column;
+
+          h2 {
+            color: white;
+            font-size: 17px;
+          }
+
+          p {
+            color: #8a98a4;
+          }
+        }
+      }
+    }
+  }
+
+  .rightChat {
+    .messageSection {
+      display: flex;
+      overflow: auto;
+      position: relative;
+
+      .messageTexts {
+        display: flex;
+        flex-direction: column;
+        margin-top: 13px;
+
+        .sendTime {
+          position: absolute;
+          right: 20px;
+          bottom: 0;
+          color: #8a98a4;
+          font-weight: 400;
+          cursor: pointer;
+        }
+
+        h2 {
+          font-size: 17px;
+          color: white;
+          font-weight: 700;
+          cursor: pointer;
+        }
+
+        p {
+          color: white;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .topRightChat {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 345px;
+      height: 59px;
+
+      .downLine {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #4c4c4c;
+      }
+
+      .texts {
+        color: white;
+        padding-left: 20px;
+        padding-top: 9px;
+
+        h2 {
+          font-size: 15px;
+        }
+
+        p {
+          color: #8a98a4;
+          font-size: 14px;
+        }
+      }
+
+      .icons {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        position: absolute;
+        right: 23px;
+
+        img {
+          cursor: pointer;
+        }
+
+        svg {
+          cursor: pointer;
+        }
+
+        button {
+          background-color: #eb4b4b;
+          color: black;
+          width: 54px;
+          height: 30px;
+          border-radius: 20px;
+          border: none;
+          cursor: pointer;
+
+          &:hover {
+            transition: 300ms;
+            background-color: #e05555;
+          }
+        }
+      }
+    }
+  }
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.messageArea {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 73px;
+  background-color: #313539;
+  margin-top: 68px;
+  align-items: center;
+  position: relative;
+
+  .input {
+    background: #6e6e6e;
+    width: 450px;
+    height: 36px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    input {
+      outline: none;
+      padding-left: 15px;
+      border: none;
+      background: transparent;
+      color: white;
+
+      &::placeholder {
+        color: white;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+.iconsToSend {
+  display: flex;
+  gap: 8px;
+  margin-left: 200px;
+
+  img {
+    cursor: pointer;
+  }
+
+  svg {
+    cursor: pointer;
+  }
+}
+
+.chatMenu {
+  width: 236px;
+  height: 74px;
+  background: #3c3c3c;
+  border-radius: 3px;
+  position: absolute;
+  right: 0;
+  top: 48px;
+  z-index: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  img {
+    cursor: pointer;
+  }
+
+  svg {
+    cursor: pointer;
+  }
+
+  h2 {
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+  }
+}
+
+.addSomethingSection {
+  width: 236px;
+  height: 104px;
+  background: #3c3c3c;
+  border-radius: 3px;
+  position: absolute;
+  right: 31px;
+  top: -88px;
+  z-index: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  img {
+    cursor: pointer;
+  }
+
+  svg {
+    cursor: pointer;
+  }
+
+  h2 {
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+  }
+}
+
+.scrollContent {
+  &::-webkit-scrollbar {
+    width: 9px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
